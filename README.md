@@ -8,12 +8,14 @@ This is a basic startup app single page application featuring AngularJs front en
 * Maven.
 
 ## Tech stack
+
 * Backend
-** Spring MVC Framework 4.1.1
-** Hibernate ORM 4.3.1
-** Postgresql Database 9.2
+ * Spring MVC Framework 4.1.1
+ * Hibernate ORM 4.3.1
+ * Postgresql Database 9.2
+
 * Frontend
-** AngularJS 1.3
-** Bootstrap 3.1.1
-** JQuery 2.1
-** + plugins (I18N, ng-routing, ng-grid, angular-cache-booster and so on).
+ * AngularJS 1.3
+ * Bootstrap 3.1.1
+ * JQuery 2.1
+ * plugins (I18N, ng-routing, ng-grid, angular-cache-booster and so on).
