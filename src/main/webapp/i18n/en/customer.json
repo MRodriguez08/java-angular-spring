@@ -1,0 +1,24 @@
+{
+    "customer": {
+        "title" : {
+        	"create" : "Create customer",
+        	"update" : "Edit customer",
+        	"list" : "List customers"
+    	},     
+        "form" : {
+        	"name" : "Name",
+        	"surname" : "Surname",
+        	"cellphone" : "Cellphone",
+        	"email" : "Email",
+        	"address" : "Address"
+        },
+        "grid" : {
+        	"id" : "Id",
+        	"name" : "Name",
+        	"surname" : "Surname",
+        	"cellphone" : "Cellphone",
+        	"email" : "Email",
+        	"address" : "Address"
+        }
+    }
+}

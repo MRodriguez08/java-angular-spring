@@ -1,0 +1,15 @@
+.ui-grid {
+  width: 100%;
+  height: 400px;
+} 
+
+.grid-action-glyphicon{
+	padding-left: 43%;
+  	padding-top: 8%;
+  	cursor: pointer;
+  	display: inherit;
+}
+
+.bottom-buttons {
+  padding-top: 1%;
+}

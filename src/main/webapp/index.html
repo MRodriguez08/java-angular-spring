@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<link rel="stylesheet" href="assets/node/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/bower/angular-ui-grid/ui-grid.css" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	
+	<body ng-app="angularSpringApp">
+	
+		<div ui-view="navbar" ng-cloak=""></div>
+		
+        <div class="container">
+            <div class="well" ui-view="content"></div>
+
+<!-- 
+            <div class="footer">
+                <p translate="footer">This is your footer</p>
+            </div>
+-->
+        </div>
+ 
+ 	
+		<!-- SPELLS -->
+		<script	src="assets/node/jquery/dist/jquery.min.js"></script>
+		<script	src="assets/node/angular/angular.min.js"></script>
+		<script	src="assets/node/angular-route/angular-route.min.js"></script>
+		<script	src="assets/node/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script	src="assets/node/angular-translate/dist/angular-translate.min.js"></script>
+		<script	src="assets/node/angular-local-storage/dist/angular-local-storage.min.js"></script>
+		<script	src="assets/node/angular-dynamic-locale/tmhDynamicLocale.min.js"></script>
+		<script	src="assets/node/angular-resource/angular-resource.min.js"></script>
+		<script	src="assets/node/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script	src="assets/node/angular-cookies/angular-cookies.min.js"></script>
+		<script	src="assets/node/angular-cache-buster/angular-cache-buster.js"></script>
+		<script	src="assets/node/angular-translate/dist/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js"></script>
+		<script	src="assets/node/angular-translate/dist/angular-translate-loader-partial/angular-translate-loader-partial.min.js"></script>
+		<script	src="assets/node/bootbox/bootbox.min.js"></script>
+		
+		<script	src="assets/bower/angular-ui-grid/ui-grid.js"></script>		        
+		        
+		<script src="app/app.js"></script>
+		<script src="app/app.constants.js"></script>       
+		
+       	<script src="app/customer/customer.js"></script> 
+        <script src="app/customer/list/list.js"></script> 
+		<script src="app/customer/list/list.controller.js"></script>
+        <script src="app/customer/create/create.js"></script> 
+		<script src="app/customer/create/create.controller.js"></script>
+        <script src="app/customer/update/update.js"></script> 
+		<script src="app/customer/update/update.controller.js"></script>
+		
+        <script src="app/main/main.js"></script>
+        <script src="app/main/main.controller.js"></script>        
+		        
+		<script src="components/navbar/navbar.directive.js"></script>
+		<script src="components/navbar/navbar.controller.js"></script>
+		<script src="components/language/language.service.js"></script>
+        <script src="components/language/language.controller.js"></script>
+		
+		<script src="components/customer/service.js"></script>
+        <script src="components/customer/resource.js"></script>
+	
+	</body>
+</html>

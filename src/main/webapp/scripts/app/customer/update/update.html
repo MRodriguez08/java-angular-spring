@@ -1,0 +1,59 @@
+<div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1 translate="customer.title.update">Update</h1>
+
+			<div ng-show="success">			
+	            <div class="alert alert-success"  >
+	                {{ successMessage }}
+	            </div>
+	            <a ui-sref="customer.list">
+	             	<span class="glyphicon glyphicon-wrench"></span>
+	             	&#xA0;<span>List</span>
+	           	</a> | 
+	           	<a ui-sref="customer.create">
+	             	<span class="glyphicon glyphicon-wrench"></span>
+	             	&#xA0;<span>Create</span>
+	           	</a>
+			</div>
+
+            <div class="alert alert-danger" ng-show="error" >
+                {{ errorMessage }}
+            </div>
+
+            <form ng-show="!success" name="form" role="form" novalidate ng-submit="update()" show-validation>
+
+				<div class="form-group" ng-class="{'has-error' : form.name.$dirty && form.name.$error.required}">
+				    <label  class="control-label" translate="customer.form.name" for="name">Name</label>
+				    <input name="name" ng-model="model.name" type="text" class="form-control" id="name" required >
+				</div>
+				
+				<div class="form-group">
+				    <label  class="control-label" translate="customer.form.surname" for="surname">Surname</label>
+				    <input name="surname" ng-model="model.surname" type="text" class="form-control" id="surname" >
+				</div>		
+				
+				<div class="form-group">
+				    <label  class="control-label" translate="customer.form.email" for="email">Email</label>
+				    <input name="email" ng-model="model.email" type="text" class="form-control" id="email" >
+				</div>		
+				
+				<div class="form-group">
+				    <label class="control-label" translate="customer.form.cellphone" for="cellphone">Cellphone</label>
+				    <input name="cellphone" ng-model="model.cellphone" type="text" class="form-control" id="cellphone" >
+				</div>		
+				
+				<div class="form-group">
+				    <label class="control-label"  translate="customer.form.address" for="address">Address</label>
+				    <textarea name="address" ng-model="model.address" id="address" class="form-control" rows="3"></textarea>
+				</div>
+
+                <button type="submit" ng-disabled="form.$invalid" class="btn btn-primary" translate="global.buttons.create">Create</button>
+                 <a ui-sref="customer.list">
+	             	<span class="glyphicon glyphicon-wrench"></span>
+	             	&#xA0;<span translate="global.buttons.back">Back</span>
+	           	</a>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{
+    "global": {
+        "title": "AngularSpringApp",
+        "buttons": {
+            "edit": "Edit",
+            "refresh": "Refresh",
+            "delete": "Delete",
+            "create": "Create",
+            "back": "Back"
+        },
+        "menu": {
+            "home": "Home",
+            "customers": {
+                "main": "Customers",
+                "list": "List customers",
+                "create": "Create customers",
+                "attributes": {
+                    "id": "id",
+                    "name": "Name",
+                    "surname": "Surname",
+                    "email": "Email",
+                    "cellphone": "Cellphone",
+                    "address": "Address"
+                }
+            }
+        }
+    }
+}
